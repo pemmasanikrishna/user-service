@@ -17,3 +17,8 @@ Once the above jar file is produced, the docker image  can be built using the [D
 
 The [helm chart](charts/user-service) can be used to generate the kubernetes manifest and deploy the pod
 
+The service uses the environment variables 
+
+`SERVER_PORT` to override the default port 8080 on which the service listens.
+`MAX_REQUESTS_PER_MINUTE` to override the default rate limiting of 10 requests per minute per IP.
+
